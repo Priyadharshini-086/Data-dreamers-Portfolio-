@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>datadreamers Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to <span class="highlight">datadreamers</span> Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section fade-in">
+        <h2>About Us</h2>
+        <p>We are DataDreamers, a passionate team of developers and problem-solvers dedicated to 
+            transforming data into impactful solutions. With expertise spanning web development, 
+            software engineering, and cyber security, we focus on building innovative, secure, and scalable systems. Our mission is to bring dreams to 
+            life through technology, delivering cutting-edge solutions that drive success.</p>
+        <div class="team-photos">
+            <div class="photo" style="background-image: url('./WhatsApp\ Image\ 2024-09-19\ at\ 2.25.05\ PM.jpeg');"></div>
+            <div class="photo" style="background-image: url('./WhatsApp\ Image\ 2024-09-19\ at\ 2.26.24\ PM.jpeg');"></div>
+            <div class="photo" style="background-image: url('./WhatsApp\ Image\ 2024-09-19\ at\ 2.19.55\ PM.jpeg');"></div>
+            <div class="photo" style="background-image: url('./WhatsApp\ Image\ 2024-09-19\ at\ 2.26.53\ PM.jpeg');"></div>
+            <div class="photo" style="background-image: url('./WhatsApp\ Image\ 2024-09-19\ at\ 2.29.50\ PM.jpeg');"></div>
+            
+            
+
+        </div>
+    </section>
+
+    <section id="skills" class="section slide-in">
+        <h2>Skills</h2>
+        <div class="skill-bars">
+            <div class="skill">
+                <span>HTML, CSS, JavaScript</span>
+                <div class="bar"><div class="progress html"></div></div>
+            </div>
+            <div class="skill">
+                <span>Python</span>
+                <div class="bar"><div class="progress ml"></div></div>
+            </div>
+            <div class="skill">
+                <span>Cyber security</span>
+                <div class="bar"><div class="progress cloud"></div></div>
+            </div>
+            <div class="skill">
+                <span>Web Development</span>
+                <div class="bar"><div class="progress web"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section fade-in">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project-card" onclick="showProjectDetails('A calculator application that performs basic arithmetic operations such as addition, subtraction, multiplication, and division. It can be a simple command-line tool or a more advanced graphical user interface (GUI) application, featuring functionalities like memory storage, percentage calculations, and scientific operations.')">
+                <img src="./WhatsApp Image 2024-09-19 at 1.56.28 PM (1).jpeg" width="100px" height="90px">
+
+                <p>Click for details</p>
+            </div>
+            <div class="project-card" onclick="showProjectDetails(' A comprehensive system designed to manage student data, including personal details, academic records, and attendance. Features might include student registration, grade tracking, class schedules, and report generation. This system helps educational institutions efficiently handle administrative tasks and provides a platform for both students and educators to access relevant information.')">
+                <img src="./WhatsApp Image 2024-09-19 at 1.56.28 PM.jpeg" width="100px" height="90px">
+                <p>Click for details</p>
+            </div>
+            <div class="project-card" onclick="showProjectDetails(' A single web page created to capture a visitors attention and drive a specific action, such as signing up for a newsletter, downloading an app, or making a purchase. It typically includes a compelling headline, engaging content, a clear call-to-action (CTA), and visually appealing design elements to optimize user experience and conversion rates.')">
+                <img src="./WhatsApp Image 2024-09-19 at 1.56.29 PM.jpeg" width="100px" height="90px">
+                <p>Click for details</p>
+            </div>
+        </div>
+        <div id="project-details" class="project-details">
+            <h3>Project Title</h3>
+            <p>Project Description</p>
+        </div>
+    </section>
+
+    <section id="contact" class="section slide-in">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="3" required></textarea><br><br>
+
+            <button type="submit">Send</button>
+            <div class="icons">
+                <img src="./1161953_instagram_icon.png" alt="" width="60px">
+                <img src="./linkedin.png" alt="" width="60px">
+                <img src="./google.png" alt="" width="60px" >
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 datadreamers. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
